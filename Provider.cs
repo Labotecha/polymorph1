@@ -8,8 +8,8 @@ namespace polymorph1
 {
     public abstract class Provider
     {
-        public string telNo;
+        public int telNo=22;
 
-        public abstract void sendSMS(int tlf, string msg);
+        public abstract void sendSMS(string msg);
     }
 }

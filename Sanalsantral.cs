@@ -8,10 +8,13 @@ namespace polymorph1
 {
     class Sanalsantral : Provider
     {
-        //this.telNo = "8503228800";
-        public override void sendSMS(int num, string msg)
+        public Sanalsantral()
         {
-            Console.WriteLine("Sanal Santral tarafıdan " + num + " nolu telefona " + msg + " içerikli SMS gönderildi");
+	    telNo = 85011;
+        }
+        public override void sendSMS(string msg)
+        {
+            Console.WriteLine("Sanal Santral tarafıdan " + telNo + " nolu telefona " + msg + " içerikli SMS gönderildi");
         }
     }
 }

@@ -12,7 +12,7 @@ namespace polymorph1
         {
             Provider provider;
             // programı test etmek için alttaki secim değişkenini 0 ve 1 yaparak deneyin
-            int secim = 1;
+            int secim = 0;
             if (secim == 0)
             {
                 provider = new Netgsm();
@@ -21,7 +21,7 @@ namespace polymorph1
             {
                 provider = new Sanalsantral();
             }
-            provider.sendSMS(3, "hello");
+            provider.sendSMS("hello");
             Console.ReadLine();
         }
     }
